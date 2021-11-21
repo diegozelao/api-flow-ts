@@ -59,7 +59,7 @@ export class Server {
         //
         this.application.listen(enviroment.server.port, () => {
           resolve(this.application)
-          console.log('API is running on http://localhost:3000')
+          console.log(`API is running on http://localhost:${enviroment.server.port}`)
         })
       }catch(error){
         reject(error)
